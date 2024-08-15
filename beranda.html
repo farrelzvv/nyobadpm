@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DPM STT NF</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo-dpm.svg" type="image/svg+xml">
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload image
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+  <!-- 
+    - Animasi CSS
+  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+  
+      <h1>
+        <a href="#" class="logo">DPM 2024</a>
+      </h1>
+  
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+  
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Beranda</a>
+          </li>
+  
+          <li class="navbar-item">
+            <a href="./profil.html" class="navbar-link" data-nav-link>Profil</a>
+          </li>
+  
+          <li class="navbar-item">
+            <a href="#features" class="navbar-link" data-nav-link>Tupoksi</a>
+          </li>
+  
+          <li class="navbar-item">
+            <div class="produk-dropdown">
+              <p class="navbar-link">Produk</p>
+              <button class="dropdown-btn" aria-label="Toggle dropdown">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+            </div>
+            <ul class="sub-navbar">
+              <li class="sub-navbar-item">
+                <a href="#" class="sub-navbar-link">Produk Hukum</a>
+              </li>
+              <li class="sub-navbar-item">
+                <a href="#" class="sub-navbar-link">SOP Keuangan</a>
+              </li>
+              <li class="sub-navbar-item">
+                <a href="#" class="sub-navbar-link">SOP Peminjaman Ruangan & Inventaris</a>
+              </li>
+              <li class="sub-navbar-item">
+                <a href="#" class="sub-navbar-link">SOP Penilaian Proker </a>
+              </li>
+              <li class="sub-navbar-item">
+                <a href="#" class="sub-navbar-link">SOP Keuangan</a>
+              </li>
+            </ul>
+          </li>
+  
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>Proker</a>
+          </li>
+  
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Aspirasi</a>
+          </li>
+  
+        </ul>
+      </nav>
+  
+      <button class="btn btn-secondary">Login Admin</button>
+  
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+  
+    </div>
+  </header>
+  
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home">
+        <div class="container">
+    
+            <figure class="hero-banner">
+                <img src="./assets/images/banner-hero.png" width="804" height="643" loading="lazy" alt="hero banner"
+                    class="w-100">
+            </figure>
+    
+            <div class="hero-content">
+    
+                <h2 class="h1 hero-title">Dewan Perwakilan Mahasiswa</h2>
+    
+                <p class="section-text">
+                    Dewan Nirvahaka Abirama - Saatnya Beraksi!
+                </p>
+                
+                <ul class="hero-list">
+                    <li class="hero-item">
+                        <img src="./assets/images/check-circle.svg" width="16" height="16" loading="lazy" alt="Checkmark icon">
+                        <span class="span">Legislasi</span>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./assets/images/check-circle.svg" width="16" height="16" loading="lazy" alt="Checkmark icon">
+                        <span class="span">Budgeting</span>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./assets/images/check-circle.svg" width="16" height="16" loading="lazy" alt="Checkmark icon">
+                        <span class="span">Controlling</span>
+                    </li>
+                </ul>
+                
+                <!-- Tombol baru -->
+                <a href="#features" class="btn hero-btn">Kenalan Yuk!</a>
+    
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <!-- 
+      - #FEATURES
+    -->
+
+      <section class="section features" id="features">
+        <div class="container">
+
+          <div class="features-content">
+
+            <h2 class="h2 section-title" data-aos="fade-up" data-aos-duration="1500">Visi</h2>
+
+            <p class="section-text" data-aos="fade-up" data-aos-duration="1500">
+              Menjadikan Dewan Perwakilan Mahasiswa STT NF yang berintegritas dan aktif dengan asas 
+              kebersamaan dan kekeluargaan dalam melaksanakan fungsi dari DPM.
+            </p>
+
+            <h2 class="h2 section-title" data-aos="fade-up" data-aos-duration="2000">Misi</h2>
+
+
+            <ul class="features-list" data-aos="fade-up" data-aos-duration="2000">
+
+              <li class="features-item">
+                <p class="item-title">Meningkatkan loyalitas, solidaritas dan kekeluargaan internal DPM STT NF</p>
+              </li>
+              <li class="features-item">
+                <p class="item-title">Mengoptimalkan landasan hukum dan fungsi pengawasan, aspirasi dan kaderisasi DPM STT NF</p>
+              </li>
+              <li class="features-item">
+                <p class="item-title">Meningkatkan komunikasi dan kedekatan antar Organisasi Kemahasiswaan STT NF</p>
+              </li>
+
+            </ul>
+
+            <!-- Tombol baru -->
+            <a href="#learn-more" class="btn hero-btn">Tentang Kami</a>
+
+          </div>
+
+          <div class="banner-wrapper" data-aos="fade-up" data-aos-duration="1500">
+
+            <figure class="features-banner one">
+              <img src="./assets/images/Vision-banner.svg" width="600" height="500" loading="lazy"
+                alt="features image" class="w-100">
+            </figure>
+          </div>
+
+          
+
+        </div>
+      </section>
+      
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-aos="fade-up" data-aos-duration="1500">Our Product</h2>
+
+          <p class="section-text" data-aos="fade-up" data-aos-duration="1500">
+            Lalu dari ketiga tugas pokok dan fungsi yang dimiliki oleh dpm, apa outputnya?
+          </p>
+
+          <ul class="about-list">
+
+            <li>
+              <div class="about-card about-card-1" data-aos="fade-up" data-aos-duration="2000">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/produk-1.svg" width="94" height="94" loading="lazy"
+                    alt="Automated Ticket Routing">
+                </figure>
+
+                <div class="card-content" data-aos="fade-up" data-aos-duration="1500">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Product Hukum</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Hasil Beberapa hukum dan ketetapan yang dihasilkan hasil dari persidangan. 
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Kepoin</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="about-card about-card-2" data-aos="fade-up" data-aos-duration="2000">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/produk-2.svg" width="94" height="94" loading="lazy"
+                    alt="Workflow Automation">
+                </figure>
+
+                <div class="card-content" data-aos="fade-up" data-aos-duration="1500">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">SOP Keuangan</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Standar kuangan yang dibuat oleh bendahara DPM seputar keuangan LFK & LDK.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Kepoin</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="about-card about-card-3" data-aos="fade-up" data-aos-duration="1500">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/produk-3.svg" width="94" height="94" loading="lazy"
+                    alt="Automated Callback">
+                </figure>
+
+                <div class="card-content" data-aos="fade-up" data-aos-duration="1500">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">SOP Peminjaman Ruangan & Inventaris</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Prosedur peminjaman ruangan dan inventaris yang wajib dilakukan oleh LFK & LDK.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Kepoin</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="about-card about-card-4" data-aos="fade-up" data-aos-duration="1500">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/produk-4.svg" width="94" height="94" loading="lazy"
+                    alt="Customer Feedback Surveys">
+                </figure>
+
+                <div class="card-content" data-aos="fade-up" data-aos-duration="1500">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">SOP Penilaian Proker</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Prosedur Penilaian untuk proker LFK & LDK yang menggunakan dana kemahasiswaan
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Kepoin</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+            
+
+          </ul>
+
+          <p class="section-text">
+            Dari produk yang ada, siapa sih orang-orang dibalik itu semua?
+            <a href="#" class="btn-link">
+              <span class="span">Kepoin yuk!</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </p>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="section stats">
+        <div class="container">
+
+          <figure class="stats-banner">
+            <img src="./assets/images/stats-banner.png" width="619" height="482" loading="lazy" alt="stats"
+              class="w-100">
+          </figure>
+
+          <ul class="stats-list">
+
+            <li class="stats-item purple">
+              <h3 class="item-title">
+                25
+                <span class="span">Proker</span>
+              </h3>
+
+              <p class="stats-text">Program Kerja</p>
+            </li>
+
+            <li class="stats-item red">
+              <h3 class="item-title">
+                10+
+                <span class="span">Prokum</span>
+              </h3>
+
+              <p class="stats-text">Produk Hukum</p>
+            </li>
+
+            <li class="stats-item green">
+              <h3 class="item-title">
+                4+
+                <span class="span">SPO</span>
+              </h3>
+
+              <p class="stats-text">Standar Prosedur Operasi</p>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SUPPORT
+      -->
+
+      <section class="section support">
+        <div class="container">
+
+          <div class="support-content">
+            <h2 class="h2 section-title">24/7 Wadah Aspirasi</h2>
+
+            <p class="section-text">
+              Kamu punya kritik/pesan untuk kampus? yuk sampaikan pada kami!
+            </p>
+          </div>
+
+          <a href="#" class="btn btn-secondary">Wadah Aspirasi</a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">Nirvama</a>
+
+          <figure class="footer-img">
+            <img src="./assets/images/footer.svg" width="264" height="226" loading="lazy" aria-hidden="true"
+              class="w-100">
+          </figure>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Halaman</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Profil</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Tupoksi</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Produk</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Proker</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Aspirasi</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Hubungi Kami</p>
+          </li>
+
+          <li class="footer-item">
+            <img src="./assets/images/contact-icon-1.svg" width="16" height="16" loading="lazy" aria-hidden="true">
+
+            <span class="span">
+              Yafi
+              <a href="tel:+3237501234" class="footer-item-link">+6285710672476</a>
+            </span>
+          </li>
+
+          <li class="footer-item">
+            <img src="./assets/images/contact-icon-2.svg" width="16" height="16" loading="lazy" aria-hidden="true">
+
+            <span class="span">
+              Alamat:
+              <a href="#" class="footer-item-link">Kampus A Sekolah Tinggi Terpadu Nurul Fikri</a>
+            </span>
+          </li>
+
+          <li class="footer-item">
+            <img src="./assets/images/contact-icon-3.svg" width="16" height="16" loading="lazy" aria-hidden="true">
+
+            <span class="span">
+              Email:
+              <a href="mailto:hello@Techx.com" class="footer-item-link">dpm@nurulfikri.ac.id</a>
+            </span>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; Create By <span class="span">DPM</span> STT NF <a href="#"
+            class="copyright-link">codewithsadee</a>
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Email</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Aspirasi</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
