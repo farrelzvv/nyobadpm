@@ -486,9 +486,18 @@ body {
   border-radius: 50%; /* Membuat tombol bulat */
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 20px; /* Ukuran ikon panah */
+.service-list .card-content h6 {
+  margin-bottom: 2px; /* Jarak bawah h6 */
+}
+
+.service-list .card-content p {
+  margin-top: 2px; /* Jarak atas p */
+  margin-bottom: 0; /* Menghilangkan margin bawah default dari p */
+}
+
+.service-list .card-content .btn-link {
+  margin-top: 16px; /* Jarak atas p */
+  margin-bottom: 0; 
 }
 
 
