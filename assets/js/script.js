@@ -50,13 +50,19 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  var swiper = new Swiper('.swiper-container', {
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    slidesPerView: 1, // Menampilkan satu slide (dengan tiga card) dalam satu waktu
-  });
-});
+function toggleJobdesk() {
+  var overlay = document.getElementById('overlay');
+  var jobdeskBanner = document.getElementById('jobdeskBanner');
+  
+  // Toggle kelas 'active' untuk overlay dan jobdesk banner
+  overlay.classList.toggle('active');
+  jobdeskBanner.classList.toggle('active');
+}
+
+
+
+
+
+
+
+

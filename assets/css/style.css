@@ -476,29 +476,205 @@ body {
 
 .service-card .btn-link { color: var(--ultramarine); }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: #000; /* Mengatur warna tombol agar terlihat */
-  display: block; /* Pastikan tombol ditampilkan */
-  width: 50px; /* Lebar tombol */
-  height: 50px; /* Tinggi tombol */
-  background-color: rgba(255, 255, 255, 0.5); /* Latar belakang semi-transparan */
-  border-radius: 50%; /* Membuat tombol bulat */
+.service-card-ketua {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: var(--radius-6);
+  overflow: hidden;
+  box-shadow: var(--shadow-1);
 }
 
-.service-list .card-content h6 {
-  margin-bottom: 2px; /* Jarak bawah h6 */
+.service-card-ketua:hover {
+  transform: scale(1.05);
 }
 
-.service-list .card-content p {
-  margin-top: 2px; /* Jarak atas p */
-  margin-bottom: 0; /* Menghilangkan margin bawah default dari p */
+.service-card-ketua .card-banner {
+  background-color: var(--light-gray);
+  aspect-ratio: 1 / 0.47;
+  border-radius: var(--radius-6);
 }
 
-.service-list .card-content .btn-link {
-  margin-top: 16px; /* Jarak atas p */
-  margin-bottom: 0; 
+.service-card-ketua .card-banner .figure {
+  background-color: var(--light-gray);
+  aspect-ratio: 1 / 0.47;
+  border-radius: var(--radius-6);
 }
+
+.service-card-ketua .card-content { 
+  padding: 20px;
+}
+
+.service-card-ketua .card-title { transition: var(--transition-1); }
+
+.service-card-ketua .card-title:is(:hover, :focus) { color: var(--winter-sky); }
+
+.service-card-ketua .card-text {
+  margin-block: 10px 20px;
+  line-height: 1.8;
+}
+
+.service-card-ketua .btn-link { color: var(--ultramarine); }
+
+
+
+/* CSS untuk overlay */
+/* CSS untuk overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Adjust this if you need a specific width */
+  height: 100%; /* Adjust this if you need a specific height */
+  background-color: rgba(0, 0, 0, 0.5); /* Efek gelap */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Transisi opacity dan visibilitas */
+  z-index: 99; /* Pastikan di atas semua elemen lainnya */
+}
+
+.overlay.active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in; /* Transisi masuk */
+}
+
+.jobdesk-banner {
+  display: none; /* Tidak ditampilkan awalnya */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9); /* Efek skala saat masuk */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100; /* Di atas overlay */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease; /* Transisi opacity, skala, dan visibilitas */
+}
+
+.jobdesk-banner.active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1); /* Efek skala saat muncul */
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in; /* Transisi masuk */
+}
+
+/* Styling untuk tombol tutup */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #ff0000; /* Warna saat hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- SLIDER ------------ */
+.swiper{
+  width: 100%;
+}
+
+.swiper-wrapper{
+  width: 100%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+}
+
+.card{
+  width: 20em;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+  padding: 2em 1em;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 2em;
+}
+
+.swiper-slide:not(.swiper-slide-active){
+  filter: blur(1px);
+}
+
+.card__image{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 5px solid var(--color);
+  padding: 3px;
+  margin-bottom: 2em;
+}
+
+.card__image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card__content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__title{
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  top: .2em;
+}
+
+.card__name{
+  color: var(--color);
+}
+
+.card__text{
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1em 0;
+}
+
+.card__btn{
+  background-color: var(--color);
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: .5em;
+  border-radius: .5em;
+  margin-top: .5em;
+  cursor: pointer;
+}
+
+
 
 
 
