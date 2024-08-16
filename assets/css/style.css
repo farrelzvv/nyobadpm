@@ -511,10 +511,11 @@ body {
 
 .service-card-ketua .card-text {
   margin-block: 10px 20px;
-  line-height: 1.8;
+  line-height: 2;
 }
 
 .service-card-ketua .btn-link { color: var(--ultramarine); }
+
 
 
 
@@ -546,8 +547,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) scale(0.9); /* Efek skala saat masuk */
   padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  border-radius: var(--radius-6);
+  box-shadow: var(--shadow-1);
+  background-color: var(--white-1);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   z-index: 100; /* Di atas overlay */
   visibility: hidden;
@@ -561,6 +563,10 @@ body {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1); /* Efek skala saat muncul */
   transition: opacity 0.3s ease-in, transform 0.3s ease-in; /* Transisi masuk */
+}
+
+.jobdesk-banner .title {
+  line-height: 1.8;
 }
 
 /* Styling untuk tombol tutup */
