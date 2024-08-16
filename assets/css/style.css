@@ -516,7 +516,7 @@ body {
 }
 
 .service-card-ketua .card-text {
-  margin-block: 10px 20px;
+  margin-bottom: 30px;
   line-height: 2;
 }
 
@@ -525,14 +525,15 @@ body {
 }
 
 /* Styling untuk tombol cek jobdesk */
-.btn-link.cek-jobdesk {
+.cek-jobdesk {
   background-color: var(--primary-color); /* Warna latar belakang tombol */
   color: var(--white); /* Warna teks tombol */
   border: none; /* Menghapus border default */
-  padding: 10px 20px; /* Padding tombol */
+  padding: 0 5px;
   border-radius: var(--radius-6); /* Radius border tombol */
   cursor: pointer; /* Pointer saat hover */
   transition: background-color 0.3s ease; /* Transisi latar belakang tombol */
+  font-size: 15px;
 }
 
 .btn-link.cek-jobdesk:hover {
