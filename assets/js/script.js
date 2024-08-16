@@ -59,6 +59,9 @@ function toggleJobdesk() {
   jobdeskBanner.classList.toggle('active');
 }
 
+// Tambahkan event listener pada elemen dengan class 'cek-jobdesk'
+document.querySelector('.cek-jobdesk').addEventListener('click', toggleJobdesk);
+
 
 
 

@@ -476,13 +476,15 @@ body {
 
 .service-card .btn-link { color: var(--ultramarine); }
 
+/* Card Styles */
 .service-card-ketua {
   position: relative;
-  cursor: pointer;
+  cursor: default; /* Menghilangkan cursor pointer */
   transition: transform 0.3s ease-in-out;
   border-radius: var(--radius-6);
   overflow: hidden;
   box-shadow: var(--shadow-1);
+  pointer-events: none; /* Menonaktifkan klik pada card */
 }
 
 .service-card-ketua:hover {
@@ -505,28 +507,45 @@ body {
   padding: 20px;
 }
 
-.service-card-ketua .card-title { transition: var(--transition-1); }
+.service-card-ketua .card-title {
+  transition: var(--transition-1);
+}
 
-.service-card-ketua .card-title:is(:hover, :focus) { color: var(--winter-sky); }
+.service-card-ketua .card-title:is(:hover, :focus) {
+  color: var(--winter-sky);
+}
 
 .service-card-ketua .card-text {
   margin-block: 10px 20px;
   line-height: 2;
 }
 
-.service-card-ketua .btn-link { color: var(--ultramarine); }
+.service-card-ketua .btn-link {
+  color: var(--ultramarine);
+}
 
+/* Styling untuk tombol cek jobdesk */
+.btn-link.cek-jobdesk {
+  background-color: var(--primary-color); /* Warna latar belakang tombol */
+  color: var(--white); /* Warna teks tombol */
+  border: none; /* Menghapus border default */
+  padding: 10px 20px; /* Padding tombol */
+  border-radius: var(--radius-6); /* Radius border tombol */
+  cursor: pointer; /* Pointer saat hover */
+  transition: background-color 0.3s ease; /* Transisi latar belakang tombol */
+}
 
+.btn-link.cek-jobdesk:hover {
+  background-color: var(--secondary-color); /* Warna latar belakang saat hover */
+}
 
-
-/* CSS untuk overlay */
 /* CSS untuk overlay */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Adjust this if you need a specific width */
-  height: 100%; /* Adjust this if you need a specific height */
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Efek gelap */
   visibility: hidden;
   opacity: 0;
@@ -585,6 +604,7 @@ body {
 .close-btn:hover {
   color: #ff0000; /* Warna saat hover */
 }
+
 
 
 
