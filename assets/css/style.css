@@ -536,10 +536,6 @@ body {
   font-size: 15px;
 }
 
-.btn-link.cek-jobdesk:hover {
-  background-color: var(--secondary-color); /* Warna latar belakang saat hover */
-}
-
 /* CSS untuk overlay */
 .overlay {
   position: fixed;
@@ -586,7 +582,12 @@ body {
 }
 
 .jobdesk-banner .title {
-  line-height: 1.8;
+  line-height: 1.5;
+}
+
+.jobdesk-banner .text {
+  line-height: 1.2;
+  padding-bottom: 25px;
 }
 
 /* Styling untuk tombol tutup */
@@ -604,6 +605,10 @@ body {
 
 .close-btn:hover {
   color: #ff0000; /* Warna saat hover */
+}
+
+.jobdesk-banner .btn-link {
+  color: var(--ultramarine);
 }
 
 
